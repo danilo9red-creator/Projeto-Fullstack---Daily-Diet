@@ -1,0 +1,25 @@
+# Dependências
+node_modules/
+**/node_modules/
+
+# Arquivos de produção
+dist/
+**/dist/
+
+# Variáveis de ambiente
+.env
+.env.*
+!.env.example
+
+# Bancos de dados locais
+*.db
+*.db-journal
+*.sqlite
+*.sqlite3
+
+# Testes e cobertura
+coverage/
+
+# Arquivos do sistema
+.DS_Store
+Thumbs.db

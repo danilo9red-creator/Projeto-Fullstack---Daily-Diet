@@ -1,0 +1,28 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+model Usuario {
+  id        String     @id @default(cuid())
+  nome      String
+  createdAt DateTime   @default(now())
+  refeicoes Refeicao[]
+}
+
+model Refeicao {
+  id          String   @id @default(cuid())
+  nome        String
+  descricao   String
+  dataHora    DateTime
+  dentroDieta Boolean
+  usuarioId   String
+  usuario     Usuario  @relation(fields: [usuarioId], references: [id], onDelete: Cascade)
+  createdAt   DateTime @default(now())
+
+  @@index([usuarioId, dataHora])
+}

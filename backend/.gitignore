@@ -1,0 +1,19 @@
+# Dependências
+node_modules/
+
+# Variáveis de ambiente
+.env
+.env.*
+!.env.example
+
+# Prisma
+/generated/prisma/
+
+# Bancos de dados locais
+*.db
+*.db-journal
+*.sqlite
+*.sqlite3
+
+# Testes e cobertura
+coverage/

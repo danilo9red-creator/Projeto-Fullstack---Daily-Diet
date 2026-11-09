@@ -1,0 +1,131 @@
+
+.tela-login {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  background-color: #f5f7f5;
+}
+
+.cartao-login {
+  width: 100%;
+  max-width: 430px;
+  padding: 40px;
+  background-color: white;
+  border-radius: 15px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.07);
+}
+
+.cartao-login h1 {
+  color: #26734d;
+  font-size: 32px;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.cartao-login > p {
+  color: #65736a;
+  text-align: center;
+  font-size: 14px;
+  margin-bottom: 30px;
+}
+
+.cartao-login form h2 {
+  color: #26332b;
+  font-size: 21px;
+  margin-bottom: 22px;
+}
+
+.cartao-login form {
+  display: flex;
+  flex-direction: column;
+}
+
+.cartao-login label {
+  color: #34443a;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.cartao-login input {
+  width: 100%;
+  padding: 13px;
+  margin-bottom: 20px;
+  border: 1px solid #d8e0da;
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 14px;
+  outline: none;
+}
+
+.cartao-login input:focus {
+  border-color: #26734d;
+}
+
+.cartao-login form button {
+  width: 100%;
+  padding: 14px;
+  border: none;
+  border-radius: 8px;
+  background-color: #26734d;
+  color: white;
+  font-size: 15px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.cartao-login form button:hover {
+  background-color: #1d5c3d;
+}
+
+.cartao-login form button:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+
+.alternar-login {
+  margin-top: 25px;
+  padding-top: 20px;
+  border-top: 1px solid #e8eee9;
+  text-align: center;
+}
+
+.alternar-login p {
+  color: #65736a;
+  font-size: 14px;
+  margin-bottom: 10px;
+}
+
+.alternar-login button {
+  padding: 8px 12px;
+  border: none;
+  background-color: transparent;
+  color: #26734d;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.alternar-login button:hover {
+  text-decoration: underline;
+}
+
+.mensagem-erro {
+  display: block;
+  margin-bottom: 15px;
+  color: #c0392b;
+  font-size: 13px;
+}
+
+@media (max-width: 500px) {
+  .cartao-login {
+    padding: 28px 22px;
+  }
+
+  .cartao-login h1 {
+    font-size: 28px;
+  }
+}
